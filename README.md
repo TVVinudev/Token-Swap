@@ -30,7 +30,7 @@ Ensure you have the following installed on your system:
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/TVVinudev/Token-Swap-peer2play.git
+   git clone https://github.com/TVVinudev/Token-Swap.git
    cd Token-Swap
    ```
 
