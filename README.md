@@ -30,8 +30,8 @@ Ensure you have the following installed on your system:
 ### Steps
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/dapp-repo.git
-   cd dapp-repo
+   git clone https://github.com/TVVinudev/Token-Swap-peer2play.git
+   cd Token-Swap
    ```
 
 2. Install dependencies:
@@ -42,23 +42,33 @@ Ensure you have the following installed on your system:
 3. Configure environment variables:
    Create a `.env` file in the root directory and add the following:
    ```env
-   REACT_APP_INFURA_API_KEY=your_infura_api_key
+   URL_ALCAMY=your_api_key
    PRIVATE_KEY=your_ethereum_private_key
    ```
 
-4. Compile and deploy smart contracts:
+   or
+   
+   also you can run in Hardhat Localhost.
+   ```bash
+    npx hardhat node
+   ```
+   keep run this in a terminal.
+
+5. Compile and deploy smart contracts:
    ```bash
    npx hardhat compile
    npx hardhat run scripts/deploy.js --network <network-name>
    ```
 
-5. Start the frontend:
+6. Start the frontend:
    ```bash
-   npm start
+   cd front-end
+   npm install
+   npm run dev
    ```
 
-6. Access the application:
-   Open your browser and navigate to `http://localhost:3000`.
+7. Access the application:
+   Open your browser and navigate to `http://localhost:5173`.
 
 ## Usage
 1. Connect your wallet using Metamask.
@@ -88,8 +98,6 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch: `git push origin feature-name`.
 5. Create a pull request.
 
-## License
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ## Acknowledgments
 - [OpenZeppelin](https://openzeppelin.com/) for the ERC20 implementation.
